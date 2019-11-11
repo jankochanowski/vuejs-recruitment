@@ -15,7 +15,7 @@
         <span
           class="m-highlight"
         >Panel akcji</span>. Dane w tabeli możesz edytować za pomocą przycisku
-        <span class="m-highlight">Tryb edycji</span>. Aby powrócić do domyślnego widoku arkusza, wybierz
+        <span class="m-highlight">Tryb edycji</span>. Aby powrócić do początkowego stanu arkusza, wybierz
         <span class="m-highlight">Reset arkusza</span>. Aby dodać kolejny wiersz lub kolumnę, kliknij odpowiednio:
         <span
           class="m-highlight"
@@ -153,16 +153,16 @@ export default {
       this.prepreNewState();
     },
     removeRow() {
-      if (this.rows.length < 1) {
-        this.validation = "Brak wierszy do usunięcia.";
+      if (this.rows.length < 2) {
+        this.validation = "W tabeli powinien zostać co najmniej jeden wiersz.";
       } else {
         this.rows.splice(this.rows.length - 1, 1);
         this.prepreNewState();
       }
     },
     removeColumn() {
-      if (this.columns < 1) {
-        this.validation = "Brak kolumn do usunięcia.";
+      if (this.columns < 2) {
+        this.validation = "W tabeli powinna zostać co najmniej jedna kolumna.";
       } else {
         this.columns -= 1;
         for (var i = 0; i < this.rows.length; i++) {
@@ -176,10 +176,9 @@ export default {
       for (var i = 0; i < this.columns; i++) {
         this.colSum = 0;
         for (var a = 0; a < this.rows.length; a++) {
-          if (typeof this.rows[a][i] === "number") {
+          if (this.rows[a][i] !== null) {
             this.colSum = this.colSum + parseFloat(this.rows[a][i]);
           }
-          //this.colSum = this.colSum + parseFloat(this.rows[a][i]);
         }
         this.sum.push(this.colSum);
       }
@@ -191,7 +190,7 @@ export default {
         for (var a = 0; a < this.rows[i].length; a++) {
           var denominator = this.rows[i].length;
 
-          if (typeof this.rows[i][a] === "number") {
+          if (this.rows[i][a] !== null) {
             this.rowSum += parseFloat(this.rows[i][a]);
           } else {
             denominator -= 1;
