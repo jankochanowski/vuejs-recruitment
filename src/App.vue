@@ -3,7 +3,7 @@
     <div class="mHeader">
       <img
         class="logoVueJs"
-        src="https://jankochanowski.github.io/vuejs/logovju.png"
+        src="https://jankochanowski.github.io/vuejs-recruitment/public/assets/logovju.png"
         alt="logo vue.js"
       >
       <br>
@@ -234,7 +234,7 @@ export default {
 html {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  background-image: url("https://jankochanowski.github.io/vuejs/bgr7.jpg");
+  background-image: url("https://jankochanowski.github.io/vuejs-recruitment/public/assets/bgr7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
