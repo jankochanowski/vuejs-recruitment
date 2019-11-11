@@ -234,7 +234,7 @@ export default {
 html {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  background-image: url("https://jankochanowski.github.io/vuejs-recruitment/bgr7.jpg");
+  background-image: url("https://jankochanowski.github.io/vuejs-recruitment/public/assets/bgr7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
