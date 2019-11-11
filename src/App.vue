@@ -176,7 +176,7 @@ export default {
       for (var i = 0; i < this.columns; i++) {
         this.colSum = 0;
         for (var a = 0; a < this.rows.length; a++) {
-          if (typeof this.rows[a][i] === "number") {
+          if (this.rows[a][i] !== 0) {
             this.colSum = this.colSum + parseFloat(this.rows[a][i]);
           }
           //this.colSum = this.colSum + parseFloat(this.rows[a][i]);
@@ -191,7 +191,7 @@ export default {
         for (var a = 0; a < this.rows[i].length; a++) {
           var denominator = this.rows[i].length - 1;
 
-          if (typeof this.rows[i][a] === "number") {
+          if (this.rows[i][a] !== 0) {
             this.rowSum += parseFloat(this.rows[i][a]);
           } else {
             denominator -= 1;
@@ -234,7 +234,7 @@ export default {
 html {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  background-image: url("https://jankochanowski.github.io/vuejs/bgr7.jpg");
+  background-image: url("https://jankochanowski.github.io/vuejs-recruitment/bgr7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
