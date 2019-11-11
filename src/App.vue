@@ -189,7 +189,7 @@ export default {
       for (var i = 0; i < this.rows.length; i++) {
         this.rowSum = 0;
         for (var a = 0; a < this.rows[i].length; a++) {
-          var denominator = this.rows[i].length - 1;
+          var denominator = this.rows[i].length;
 
           if (typeof this.rows[i][a] === "number") {
             this.rowSum += parseFloat(this.rows[i][a]);
