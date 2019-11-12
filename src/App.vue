@@ -34,8 +34,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(row, index) in rows" :key="index">
-            <td v-for="(column, index) in columns" :key="index">
+          <tr v-for="(row, index) in rows" :key="`row-${index}`">
+            <td v-for="(column, index) in columns" :key="`column-${index}`">
               <span class="row-span" v-bind:class="{regdisplay: regDisplay}">{{ row[column-1] }}</span>
               <input
                 class="row-input"
