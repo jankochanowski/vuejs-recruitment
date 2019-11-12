@@ -281,7 +281,7 @@ html {
   font-size: 0.9em;
 }
 .tableWrapper {
-  overflow-x: scroll;
+  overflow-x: auto;
   width: 100%;
 }
 
