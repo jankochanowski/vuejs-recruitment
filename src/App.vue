@@ -9,8 +9,18 @@
       <br>
       <span class="logo-text">Vue.js</span>
       <br>
-      <span class="header-label">Zadanie rekrutacyjne</span>
+      <span class="header-label">Przykładowe zadanie rekrutacyjne</span>
       <p>
+        
+      Stwórz aplikację w Vue.js do tworzenia prostych arkuszy (tabel). Powinna ona spełniać następujące
+      założenia:
+      <ul>
+      <li>Arkusz powinien mieć opcję do zwiększania/zmniejszania liczby kolumn.</li>
+      <li>Arkusz powinien mieć opcję do zwiększania/zmniejszania liczby wierszy.</li>
+      <li>W każdą komórkę można wpisać wartość liczbową.</li>
+      <li>Pod każdą kolumną powinna się wyświetlać suma komórek w kolumnie.</li>
+      <li>Na końcu każdego wiersza powinna się wyświetlać średnia z wszystkich komórek w wierszu.</li></ul>
+        <br>
         Domyślnie wyświetlana jest przykładowa tabela 4x4. Pod tabelą znajduje się
         <span
           class="m-highlight"
